@@ -14,7 +14,8 @@ static const char col_gray1[]       = "#17222b";
 static const char col_gray2[]       = "#323434";
 static const char col_gray3[]       = "#c3d2df";
 static const char col_gray4[]       = "#ffffff";
-static const char col_cyan[]        = "#119c97";
+//static const char col_cyan[]        = "#119c97";
+static const char col_cyan[]        = "#5aa2e0";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -75,8 +76,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_o,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.01} },
+	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.01} },
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
@@ -91,15 +92,15 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        0x26,                      0)
-	TAGKEYS(                        0xe9,                      1)
-	TAGKEYS(                        0x22,                      2)
-	TAGKEYS(                        0x27,                      3)
-	TAGKEYS(                        0x28,                      4)
-	TAGKEYS(                        0x2d,                      5)
-	TAGKEYS(                        0xe8,                      6)
-	TAGKEYS(                        0x5f,                      7)
-	TAGKEYS(                        0xe7,                      8)
+	TAGKEYS(                        XK_1,                      0)
+	TAGKEYS(                        XK_2,                      1)
+	TAGKEYS(                        XK_3,                      2)
+	TAGKEYS(                        XK_4,                      3)
+	TAGKEYS(                        XK_5,                      4)
+	TAGKEYS(                        XK_6,                      5)
+	TAGKEYS(                        XK_7,                      6)
+	TAGKEYS(                        XK_8,                      7)
+	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
